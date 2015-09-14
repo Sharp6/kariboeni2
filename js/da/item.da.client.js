@@ -2,7 +2,7 @@ define(['jquery'], function($){
 	"use strict";
 	
 	var loadItems = function() {
-		return $.getJSON("/v2/services/getItems.php").promise();
+		return $.getJSON("http://www.kariboeni.be/v2/services/getItems.php").promise();
 	};
 
 	return {

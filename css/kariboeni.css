@@ -65,10 +65,15 @@ div#logoDiv img {
 	height: 50px;
 }
 
+.categorieBeschrijving {
+	max-width: 300px;
+}
 
 /* GREENS */ 
 div.thumbnail {
 	border: 1px solid #00C5A1;
+	margin: 10px;
+	width: 30%;
 }
 
 div.thumbnail .btn-default {

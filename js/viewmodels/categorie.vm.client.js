@@ -3,7 +3,7 @@ define(['knockout', 'models/item.model.client', 'da/item.da.client'], function(k
 		var self = this;
 
 		self.items = ko.observableArray([]);
-		self.categorieId = ko.observable();
+		self.categorieId = ko.observable(document.getElementById('hiddenCat').value);
 
 		self.loadItems = function() {
 			itemDA.load()
@@ -11,10 +11,17 @@ define(['knockout', 'models/item.model.client', 'da/item.da.client'], function(k
 					var mappedItems = response.map(function(item) {
 						return new Item(item);
 					});
-					var filteredItems = mappedItems.filter(function(item) {
-						return item.itemCategorieId() === self.categorieId()
 
+					console.log(mappedItems.length);
+
+					var filteredItems = mappedItems.filter(function(item) {
+						console.log(item.itemCategorieId());
+						return item.itemCategorieId() === self.categorieId();
 					});
+
+					console.log(filteredItems.length);
+
+					self.items(filteredItems);
 				});
 		}
 

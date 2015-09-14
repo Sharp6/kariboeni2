@@ -23,9 +23,7 @@ require(["jquery", "knockout", "bootstrap", "masonry", "imagesloaded", "utils.cl
 
 		var imgLoad;
 		var msnry;
-
 		var masonryElement = "div.categories";
-
 		popupVM.categories.subscribe(function(newCategories) {
 			imgLoad = imagesLoaded(document.querySelector(masonryElement));
 			imgLoad.on('always', function() {
@@ -36,25 +34,4 @@ require(["jquery", "knockout", "bootstrap", "masonry", "imagesloaded", "utils.cl
 				});
 			});
 		});
-		
-		/*
-		
-		var imgLoad = imagesLoaded(document.querySelector(".categories"));
-		imgLoad.on('always', function() {
-			console.log(imgLoad.images.length + ' images loaded.');
-			
-		});
-*/
-
-		/*
-		imagesLoaded(masonryElement, function() {
-			console.log("Images are now loaded.");
-			var msnryElem = document.querySelector(masonryElement);
-			var msnry = new Masonry( msnryElem, {
-				columnWidth: '.thumbnail',
-				itemSelector: '.thumbnail'
-			});
-		});
-*/
-
 });

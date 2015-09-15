@@ -4,6 +4,7 @@ define(['knockout', 'models/item.model.client', 'da/item.da.client'], function(k
 
 		self.items = ko.observableArray([]);
 		self.categorieId = ko.observable(document.getElementById('hiddenCat').value);
+		self.currentItem = ko.observable();
 
 		self.loadItems = function() {
 			itemDA.load()

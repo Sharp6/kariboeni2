@@ -1,10 +1,6 @@
 <?php require_once("header.php"); ?>
 
 <input id="hiddenCat" type="hidden" value="<?php echo $_GET["catId"]; ?>" />
-<p>
-	CategorieId is <span data-bind="text:categorieId"></span>.
-  CurrentItem is <span data-bind="if:currentItem()"><span data-bind="text:currentItem().itemTitel"></span></span>.
-</p>
 
 <div data-bind="foreach:items" class="items">
   <div class="veilingItem">
@@ -56,8 +52,6 @@
 
         <form data-bind="foreach:$parent.formFields">
 
-
-
           <div class="form-group" data-bind="css: {'has-error': valueHolder.hasError}">
             <label class="control-label" data-bind="text:label"></label>
             <div>
@@ -66,12 +60,9 @@
             </div>
           </div>
 
-
-
-
         </form>
 
-        <p>The form is <span data-bind="text:formComplete"></span>.</p>
+        <button class="btn btn-success" data-bind="css: {disabled: !$parent.formComplete()}">Bestel</button>
 
       </div>
     </div>

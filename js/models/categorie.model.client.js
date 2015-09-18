@@ -7,7 +7,7 @@ define(['knockout'], function(ko) {
 		self.categorieBeschrijving = ko.observable(data.categorieBeschrijving);
 
 		self.categorieUrl = ko.computed(function() {
-			return "categorie.php?categorieId=" + self.categorieId();
+			return "categorie.php?catId=" + self.categorieId();
 		});
 		self.categorieImg = ko.computed(function() {
 			return "../img/categories/" + self.categorieId() + ".jpg";

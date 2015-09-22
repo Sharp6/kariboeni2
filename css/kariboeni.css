@@ -6,6 +6,14 @@ body {
   text-align: left;
 }
 
+p {
+	text-align: justify; 
+}
+
+h1, .h1 {
+	font-size: 3em;
+}
+
 .categoryMenuItem {
 	background: #444444;
 }
@@ -53,7 +61,11 @@ div.sidebox {
 	margin-left: 1em;
 }
 
-div.sidebox span.emph {
+div.mainbox {
+	padding-left: 0; 
+}
+
+span.emph {
 	font-weight: bold;
 	color: #f22;
 }
@@ -71,11 +83,12 @@ div#logoDiv img {
 
 /* GREENS */ 
 div.thumbnail {
-	border: 1px solid #00C5A1;
+	/*border: 2px solid #00C5A1;*/
+	border: 2px solid #7DC5CB;
 	margin: 10px;
 	width: 30%;
 }
 
-div.thumbnail .btn-default {
+/*div.thumbnail .btn-default {
 	border-color: #00C5A1;
-}
+}*/

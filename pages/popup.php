@@ -6,7 +6,7 @@
 		<div class="caption">
 			<h3 data-bind="text:categorieNaam"></h3>
 			<p data-bind="html:categorieBeschrijving" class="categorieBeschrijving"></p>
-			<a data-bind="attr: {href: categorieUrl}" class="btn btn-default">Bekijk <span data-bind="text:categorieNaam"></span></a>
+			<a data-bind="attr: {href: categorieUrl}" class="btn btn-info">Bekijk <span data-bind="text:categorieNaam"></span></a>
 		</div>
 	</div>
 </div>

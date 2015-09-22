@@ -11,7 +11,7 @@
           <img data-bind="attr: {src: itemImg}, css: isSoldClass()" class="itemImage" />
           <span class="jm-item-overlay"> </span>
           <div class="jm-item-button" data-bind="css: isSoldClass">
-            <a href="" class="btn btn-default" data-bind="click:$parent.currentItem, attr: {'data-target': '#itemModal', 'data-toggle':'modal'}">Meer info</a>
+            <a href="" class="btn btn-info" data-bind="click:$parent.currentItem, attr: {'data-target': '#itemModal', 'data-toggle':'modal'}">Meer info</a>
           </div>
         </div>
         <div class="jm-item-title" data-bind="text:itemLabel"></div>

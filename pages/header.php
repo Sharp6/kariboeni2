@@ -19,6 +19,8 @@
     <script type="text/javascript" src="js/bootstrapvalidator/js/bootstrapValidator.js"></script>
 -->    
     <!-- Custom styles for this template -->
+    
+    <link href="../css/ct-paper.css" rel="stylesheet">
     <link href="../css/kariboeni.css" rel="stylesheet">
     <link href="../css/gallery.css" rel="stylesheet">
 
@@ -31,7 +33,7 @@
 
   <body>
 
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-ct-primary navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">

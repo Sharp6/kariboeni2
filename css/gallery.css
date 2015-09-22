@@ -11,7 +11,7 @@
 	position: relative;
 	padding: 7px;
 	/*background: #101010;*/
-    background: #2F344F;
+    background: #18484B;
 }
 
 .jm-item-image {
@@ -34,8 +34,9 @@
     position: absolute;
     left: -10px;
     bottom: 17px;
-    /*background: #FF6B0E;*/
-    background: #00C5A1;
+    /*background: #FF6B0E;
+    background: #00C5A1;*/
+    background: #5E9498;
     line-height: 1.5em;
     font-weight: normal;
     padding: 7px 9px 6px;
